@@ -142,7 +142,31 @@
         When submit quiz button is clicked , it called quizTimer() function with `true` as a parameter `quizTimer(true)` .
         Now , it entered inside the (if) condition of quizTimer() function and used clearInterval() method to stop the interval. </p>. 
 
+    <!--fifth question  -->
 
+        <div class="mt-10">
+
+        <h2 class="font-bold text-3xl">5 .What is the work procedure of chooseQuiz() function ?</h2>
+        <p class="mt-3 px-5 text-justify"><span class="font-semibold text-2xl mx-2">Answer :</span></p>
+
+        <p class="mt-3 px-7 text-justify font-semibold">chooseQuiz() function is receiving two parameter called "index" and "givenAns".</p>
+
+        <p class="mt-3 px-7 text-justify font-semibold">
+
+        First of all , chooseQuiz() function checks ,if there is an existing answer in the answers array that has the same id as the quiz at the given index in the quizData array. 
+
+        <br>
+        <br>
+    
+        If , id is not found, it means that the user has not answered this question before, then entered inside the (else) condition and  the function adds a new answer object to the answers array, using the spread operator (...) to copy all properties of the quiz at the given index in the quizData array and adding a givenAns property with the value of the givenAns argument.
+
+        <br>
+        <br>
+    
+        Otherwise , if id is found, it means that the user has already answered this question before, then entered inside the (if) condition and by using for...of loop into the answers array 
+        again check every single answer id with isExit id. If , id is found, then used splice method for updating the givenAns property of that answer object with the new givenAns value. </p>. 
+
+    </div>
 
     </article>
 </body>
