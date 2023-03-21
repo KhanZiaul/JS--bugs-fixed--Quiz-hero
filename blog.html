@@ -92,7 +92,57 @@
 
         </p>
 
-      
+        <!--third question  -->
+
+    </div>
+
+        <div class="mt-10">
+
+        <h2 class="font-bold text-3xl">3 . What is event loop? how it is work ?</h2>
+
+        <p class="mt-3 px-5 text-justify"><span class="font-semibold text-2xl mx-2">Answer :</span></p>
+
+        <p class="mt-3 px-7 text-justify">The event loop is a critical part of the JavaScript runtime environment, responsible for handling asynchronous operations in JavaScript.</p>
+
+        <p class="mt-3 px-7 text-justify">When a function is called that performs an asynchronous operation , the function is removed from the normal call stack and placed in a queue of deferred tasks. The event loop continues to execute tasks from the normal call stack until it is empty, and then it checks the queue of deferred tasks. If there are any tasks in the queue, the event loop will execute them one by one. As each task is executed, it may perform further asynchronous operations, which are added to the queue of deferred tasks. This process continues until all the tasks in the queue have been executed, and the event loop is idle again.</p>
+
+    </div>
+
+    <!--fourth question  -->
+
+        <div class="mt-10">
+
+        <h2 class="font-bold text-3xl">4 .What is the work procedure of quizTimer() function ?</h2>
+        <p class="mt-3 px-5 text-justify"><span class="font-semibold text-2xl mx-2">Answer :</span></p>
+
+        <p class="mt-3 px-7 text-justify font-semibold">quizTimer() function is receiving a parameter called "dismiss".</p>
+
+        <p class="mt-3 px-7 text-justify font-semibold">
+
+        If dismiss is `true` , then it will enter inside the (if) condition of quizTimer() function and used clearInterval() method to stop the interval.
+
+        <br>
+        <br>
+
+        Otherwise, it will enter inside the (timer) of quizTimer() function and used setInterval() method to repeatedly execute a function in every 1 second .
+
+        <br>
+        <br>
+
+        When startQuiz button is clicked, it started count. When counterNum is less than zero(0), it entered inside the (if) condition of startQuiz button function and called `quizTimer()` function with no parameter.
+
+        <br>
+        <br>
+
+        For this reason , it ignored (if) condition inside the quizTimer() function and entered inside the (timer) and used setInterval() method to repeatedly execute a function in every 1 second . 
+
+        <br>
+        <br>
+
+        When submit quiz button is clicked , it called quizTimer() function with `true` as a parameter `quizTimer(true)` .
+        Now , it entered inside the (if) condition of quizTimer() function and used clearInterval() method to stop the interval. </p>. 
+
+
 
     </article>
 </body>
