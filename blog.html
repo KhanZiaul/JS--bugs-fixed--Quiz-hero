@@ -15,6 +15,68 @@
 
     <article class="mt-5">
 
+        <!-- first question -->
+
+        <div>
+
+        <h2 class="font-bold text-3xl">1 . What are difference between map , filter , forEach and find array methods ?</h2>
+        <p class="mt-3 px-5 text-justify"><span class="font-semibold text-2xl mx-2">Answer :</span></p>
+
+        <p class="mt-3 px-7 text-justify"> <span class="font-medium">( i ) map method-</span> .map() executes the same code on every element in an array and returns a new array with the updated elements.</p>
+
+        <p class="mt-3 px-7 text-justify font-bold">Example : </p>
+
+        <p class="mt-2 px-7 text-justify font-semibold"> 
+
+            const arr = [1, 2, 3, 4]; <br>
+            const newArr = arr.map((item) => { <br>
+            return item * 2 ; <br>
+            });
+
+        </p>
+
+        <p class="mt-3 px-7 text-justify"> <span class="font-medium">( ii ) filter method-</span> .filter() checks every element in an array to see if it meets a certain criteria and returns a new array with the elements that return truthy for the criteria.</p>
+
+        <p class="mt-3 px-7 text-justify font-bold">Example : </p>
+
+        <p class="mt-2 px-7 text-justify font-semibold"> 
+
+            const arr = [1, 2, 3, 4]; <br>
+            const newArr = arr.filter((item) => { <br>
+            return item > 2; <br>
+            });
+
+        </p>
+
+        <p class="mt-3 px-7 text-justify"> <span class="font-medium">( iii ) forEach method-</span> .forEach(), is used to execute the same code on every element in an array but does not change the array and it returns undefined.</p>
+
+        <p class="mt-3 px-7 text-justify font-bold">Example : </p>
+
+        <p class="mt-2 px-7 text-justify font-semibold"> 
+
+            const arr = [1, 2, 3, 4]; <br>
+            arr.forEach((item) => { <br>
+            console.log(item * 2); <br>
+            });
+
+        </p>
+        <p class="mt-3 px-7 text-justify"> <span class="font-medium">( iv ) map method-</span> .find() method returns the value of the first element in the array that satisfies the provided function. The provided function takes in the current element and returns a boolean value (true or false). If the function returns true for an element, find() returns that element. Otherwise, it returns undefined.</p>
+
+        <p class="mt-3 px-7 text-justify font-bold">Example : </p>
+
+        <p class="mt-2 px-7 text-justify font-semibold"> 
+
+            const arr = [1, 2, 3, 4]; <br>
+            const result = arr.find((item) => { <br>
+            return item > 2; <br>
+            });
+
+        </p>
+
+        <!--second question  -->
+
+    </div>
+
 
 
     </article>
